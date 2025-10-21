@@ -22,7 +22,7 @@ class Queue {
     return this.beginning;
   }
 
-  enqueue(/* value */) {
+  enqueue(value) {
     const newValue = { value, next: null };
     if (!this.beginning) {
       this.beginning = newValue;
